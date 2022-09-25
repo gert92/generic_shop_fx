@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sda.generic_shop_fx.controller.viewControllers.Sales">
+   <children>
+      <Text layoutX="282.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sales">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ListView fx:id="salesListView" layoutX="21.0" layoutY="183.0" prefHeight="193.0" prefWidth="557.0" />
+      <Text layoutX="21.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sales" />
+      <Separator layoutX="2.0" layoutY="82.0" prefHeight="7.0" prefWidth="600.0" />
+      <Label layoutX="322.0" layoutY="158.0" text="Filter by customer:" />
+      <ComboBox fx:id="customerSelector" layoutX="428.0" layoutY="154.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

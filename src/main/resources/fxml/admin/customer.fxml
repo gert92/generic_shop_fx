@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sda.generic_shop_fx.controller.viewControllers.Customers">
+   <children>
+      <Text layoutX="269.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customers">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ListView fx:id="customerListView" layoutX="360.0" layoutY="111.0" prefHeight="263.0" prefWidth="218.0" />
+      <Text layoutX="437.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All customers" />
+      <TextField fx:id="cNameField" layoutX="23.0" layoutY="111.0" />
+      <Label layoutX="23.0" layoutY="97.0" text="Customer Name" />
+      <TextField fx:id="cBalanceField" layoutX="186.0" layoutY="111.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="186.0" layoutY="96.0" text="Balance" />
+      <Separator layoutX="346.0" layoutY="88.0" orientation="VERTICAL" prefHeight="311.0" prefWidth="8.0" />
+      <Separator layoutX="2.0" layoutY="82.0" prefHeight="7.0" prefWidth="600.0" />
+      <Button layoutX="24.0" layoutY="156.0" mnemonicParsing="false" onAction="#addCustomer" prefHeight="25.0" prefWidth="309.0" text="Add customer" />
+   </children>
+</AnchorPane>
