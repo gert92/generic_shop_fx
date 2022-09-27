@@ -18,6 +18,11 @@ public class CustomerController {
 
     }
 
+    public void updateFields(Customer customer) {
+        repository.updateCustomer(customer);
+        System.out.println("Customer Updated.");
+    }
+
     public List<Customer> findAllCustomers() {
         return repository.showAllCustomer();
     }

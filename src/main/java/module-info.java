@@ -6,6 +6,7 @@ module com.sda.generic_shop_fx {
     requires com.dlsc.formsfx;
     requires validatorfx;
     requires org.kordamp.ikonli.javafx;
+    requires org.kordamp.ikonli.fontawesome5;
     requires org.kordamp.bootstrapfx.core;
     requires mysql.connector.java;
     requires org.hibernate.orm.core;

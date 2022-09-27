@@ -1,29 +1,34 @@
 package com.sda.generic_shop_fx.views;
 
+import com.sda.generic_shop_fx.dto.Customer;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import lombok.Getter;
-import org.kordamp.bootstrapfx.BootstrapFX;
 
 
 public class ViewFactory {
 
     private final StringProperty adminSelectedMenuItem;
+    private final StringProperty userSelectedMenuItem;
     private AnchorPane productsView;
     private AnchorPane customersView;
     private AnchorPane salesView;
+    private AnchorPane chooseCustomerView;
+
+    private AnchorPane buyMenuView;
 
     public ViewFactory() {
         this.adminSelectedMenuItem = new SimpleStringProperty("");
+        this.userSelectedMenuItem = new SimpleStringProperty("");
     }
 
     public StringProperty getAdminSelectedMenuItem(){
         return adminSelectedMenuItem;
     }
+    public StringProperty getUserSelectedMenuItem(){return userSelectedMenuItem;}
 
     public void getStartingWindow(){
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Starter.fxml"));
@@ -46,13 +51,14 @@ public class ViewFactory {
     public AnchorPane getProductsView(){
         if (productsView == null){
             try {
-                productsView = new FXMLLoader(getClass().getResource("/fxml/admin/product.fxml")).load();
+                productsView = new FXMLLoader(getClass().getResource("/fxml/admin/product/product.fxml")).load();
             } catch (Exception e){
                 e.printStackTrace();
             }
         }
         return productsView;
     }
+
 
     public AnchorPane getCustomersView(){
         if(customersView == null){
@@ -75,6 +81,29 @@ public class ViewFactory {
         }
         return salesView;
     }
+
+    public AnchorPane getChooseCustomerView(){
+        if (chooseCustomerView == null){
+            try {
+                chooseCustomerView = new FXMLLoader(getClass().getResource("/fxml/shopping/chooseCustomer.fxml")).load();
+            } catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+        return chooseCustomerView;
+    }
+
+    public AnchorPane getBuyMenuView(){
+        if (buyMenuView == null){
+            try {
+                buyMenuView = new FXMLLoader(getClass().getResource("/fxml/shopping/buyMenu.fxml")).load();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return buyMenuView;
+    }
+
 
 
     private void createStage(FXMLLoader loader){

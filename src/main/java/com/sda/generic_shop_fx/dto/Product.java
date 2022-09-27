@@ -22,6 +22,7 @@ public class Product {
     private Double price;
 
     @ManyToMany(fetch = FetchType.EAGER)
+    @ToString.Exclude
     @JoinTable(name = "Sale_product",
             joinColumns = @JoinColumn(name = "product_id"),
             inverseJoinColumns = @JoinColumn(name = "sale_id"))

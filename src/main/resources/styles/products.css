@@ -1,0 +1,41 @@
+.table-view .label{
+    -fx-text-fill: #575757;
+}
+
+.table-view {
+    -fx-table-cell-border-color: transparent;
+    -fx-alignment: center;
+    -fx-background-color:  #d9eaf7;
+    -fx-padding: 5;
+
+}
+
+.table-row-cell {
+    -fx-table-cell-border-color: transparent;
+    -fx-alignment: center;
+
+}
+
+.table-column {
+    -fx-background-color:  #d9eaf7;
+    -fx-text-fill: black;
+    -fx-alignment: center;
+
+}
+
+.thick-border {
+    -fx-border-width: 0;
+}
+
+.button {
+    -fx-background-color: white;
+}
+
+.btn-edit {
+    -fx-background-color: #0FC0CA;
+}
+
+.btn-delete {
+    -fx-background-color: #96343E;
+}
+

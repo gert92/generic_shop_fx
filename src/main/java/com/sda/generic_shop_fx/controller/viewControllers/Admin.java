@@ -9,6 +9,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -20,18 +21,11 @@ public class Admin implements Initializable {
     public Button salesButton;
     public AnchorPane sideMenu;
     public Text menuText;
+    public Button shoppingMenuButton;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-//        menuText.getStyleClass().setAll("h3", "text-primary");
-//        admin_parent.setPadding(new Insets(20));
-//        sideMenu.getStyleClass().setAll("panel-primary");
-//        productsButton.getStyleClass().setAll("btn", "btn-primary");
-//        customersButton.getStyleClass().setAll("btn", "btn-primary");
-//        salesButton.getStyleClass().setAll("btn", "btn-primary");
-
         addListeners();
-
         Model.getInstance().getViewFactory().getAdminSelectedMenuItem().addListener((observableValue, oldVal, newVal) -> {
             switch (newVal){
                 case "Products" -> admin_parent.setCenter(Model.getInstance().getViewFactory().getProductsView());
@@ -46,6 +40,13 @@ public class Admin implements Initializable {
         productsButton.setOnAction(e -> onProduct());
         customersButton.setOnAction(e-> onCustomer());
         salesButton.setOnAction(e->onSales());
+        shoppingMenuButton.setOnAction(e->onShopping());
+    }
+
+    private void onShopping() {
+        Stage stage = (Stage) shoppingMenuButton.getScene().getWindow();
+        Model.getInstance().getViewFactory().getShoppingWindow();
+        Model.getInstance().getViewFactory().closeStage(stage);
     }
 
     private void onCustomer() {

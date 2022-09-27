@@ -2,18 +2,17 @@ package com.sda.generic_shop_fx.controller.viewControllers;
 
 import com.sda.generic_shop_fx.controller.ProductController;
 import com.sda.generic_shop_fx.dto.Product;
-import com.sda.generic_shop_fx.renderers.ProductListCell;
-import com.sda.generic_shop_fx.repository.ProductRepository;
+import com.sda.generic_shop_fx.renderers.ProductTableCell;
+import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.ListView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
+import javafx.scene.layout.AnchorPane;
 
 import java.net.URL;
-import java.util.List;
 import java.util.ResourceBundle;
 
 public class Products implements Initializable {
@@ -21,15 +20,43 @@ public class Products implements Initializable {
     public TextField pPriceField;
     public TextField pQuantityField;
     @FXML
-    private ListView<Product> productListView;
+    public TableView<Product> productTable;
+    public TableColumn<Product, String> nameCol;
+    public TableColumn<Product, String> priceCol;
+    public TableColumn<Product, String> qtyCol;
+    public TableColumn<Product, String> editCol;
+    public TableColumn<Product, String> deleteCol;
+    @FXML
+    public AnchorPane product_parent;
     private final ProductController productController = new ProductController();
     private final ObservableList<Product> observableList = FXCollections.observableList(productController.findAllAvailableProducts());
+    public Button productFormButton;
+    public Button productFormCancelButton;
+
+    private Product editableProduct = null;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-        productListView.setItems(observableList);
-        productListView.setCellFactory(pView -> new ProductListCell());
+        nameCol.setCellValueFactory(name -> new SimpleStringProperty(name.getValue().getProductName()));
+        priceCol.setCellValueFactory(price -> new SimpleStringProperty(price.getValue().getPrice().toString()));
+        qtyCol.setCellValueFactory(qty -> new SimpleStringProperty(qty.getValue().getQuantity().toString()));
+        deleteCol.setCellFactory(delBtn -> new ProductTableCell("delete"));
+        productTable.setItems(observableList);
+
+
+        productTable.setOnMouseClicked(mouseEvent -> {
+            editableProduct = productTable.getSelectionModel().getSelectedItem();
+            if (editableProduct != null){
+                pNameField.setText(editableProduct.getProductName());
+                pPriceField.setText(editableProduct.getPrice().toString());
+                pQuantityField.setText(editableProduct.getQuantity().toString());
+                productFormButton.setText("Edit product");
+                productFormCancelButton.setVisible(true);
+                productFormButton.setOnAction(this::editProduct);
+            }
+        });
+
     }
 
     public void addProduct(ActionEvent actionEvent) {
@@ -38,5 +65,28 @@ public class Products implements Initializable {
         pPriceField.clear();
         pQuantityField.clear();
         observableList.add(product);
+    }
+
+
+    public void editProduct(ActionEvent actionEvent) {
+        productTable.getItems().remove(editableProduct);
+        editableProduct.setProductName(pNameField.getText());
+        editableProduct.setPrice(Double.valueOf(pPriceField.getText()));
+        editableProduct.setQuantity(Long.valueOf(pQuantityField.getText()));
+        productController.updateProduct(editableProduct);
+        productTable.getItems().add(editableProduct);
+        productTable.refresh();
+        formCancel(actionEvent);
+    }
+
+    public void formCancel(ActionEvent actionEvent) {
+        editableProduct = null;
+        productFormButton.setOnAction(this::addProduct);
+        productFormButton.setText("Add product");
+        pNameField.clear();
+        pPriceField.clear();
+        pQuantityField.clear();
+        productFormCancelButton.setVisible(false);
+        productTable.getSelectionModel().clearSelection();
     }
 }

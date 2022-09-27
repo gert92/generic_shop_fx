@@ -5,48 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58f7f8c6-4994-423a-bcee-609a657886ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/SaleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/Customers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/Products.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/Sales.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/Shopping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/Starter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/dto/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/dto/Model.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/dto/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/dto/Sale.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/renderers/CustomerChoiceListCell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/renderers/CustomerListCell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/renderers/ProductListCell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/renderers/SalesListCell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/repository/CustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/repository/SaleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/repository/SessionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/ViewFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/Starter.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/admin/admin.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/admin/customer.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/admin/product.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/admin/sales.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/shopping/shopping.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/State.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/Buy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/ChooseCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/renderers/CustomerTableCell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/renderers/ProductTableCell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/renderers/SalesTableCell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/admin/product/product.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/shopping/buyMenu.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/shopping/chooseCustomer.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/styles/products.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/Customers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/Customers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/Products.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/Sales.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/Sales.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/Shopping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/Shopping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/dto/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/dto/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/dto/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/dto/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/ViewFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/ViewFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/admin/admin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/admin/admin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/admin/customer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/admin/customer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/admin/product.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/admin/product.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/admin/sales.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/admin/sales.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/shopping/shopping.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/shopping/shopping.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +86,11 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\SDA\generic_shop_fx\src\main\resources\fxml\admin\product" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sda.generic_shop_fx.HelloApplication" />
