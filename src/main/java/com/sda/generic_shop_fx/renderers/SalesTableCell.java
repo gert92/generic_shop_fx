@@ -25,7 +25,6 @@ public class SalesTableCell extends TableCell<Sale, String> {
         saleController = new SaleController();
         this.cellType = cellType;
         this.listView = new ListView<>();
-//        listView.setPrefSize(150, 25);
         listView.setMinHeight(25);
         listView.setDisable(true);
 
@@ -43,8 +42,6 @@ public class SalesTableCell extends TableCell<Sale, String> {
                 Sale sale = getTableRow().getItem();
                 saleController.deleteSale(sale);
                 getTableView().getItems().remove(sale);
-//                getTableView().getItems().remove(product);
-//                getTableView().refresh();
             }
         });
 

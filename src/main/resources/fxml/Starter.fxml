@@ -4,14 +4,14 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sda.generic_shop_fx.controller.viewControllers.Starter">
-   <children>
-      <Button fx:id="shoppingButton" layoutX="266.0" layoutY="188.0" mnemonicParsing="false" onAction="#onAction" text="Shopping" />
-      <Label layoutX="235.0" layoutY="52.0" text="Generic Shop">
-         <font>
-            <Font size="22.0" />
-         </font>
-      </Label>
-      <Button layoutX="275.0" layoutY="239.0" mnemonicParsing="false" onAction="#onAdmin" text="Admin" />
-   </children>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.sda.generic_shop_fx.views.Starter">
+   <Button fx:id="shoppingButton" layoutX="266.0" layoutY="188.0" mnemonicParsing="false" onAction="#onAction"
+           text="Shopping"/>
+   <Label layoutX="235.0" layoutY="52.0" text="Generic Shop">
+      <font>
+         <Font size="22.0"/>
+      </font>
+   </Label>
+   <Button layoutX="275.0" layoutY="239.0" mnemonicParsing="false" onAction="#onAdmin" text="Admin"/>
 </AnchorPane>

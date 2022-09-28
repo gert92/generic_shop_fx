@@ -1,11 +1,8 @@
-package com.sda.generic_shop_fx.controller.viewControllers;
+package com.sda.generic_shop_fx.views;
 
 import com.sda.generic_shop_fx.dto.Model;
-import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
-import javafx.geometry.Insets;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.text.Text;

@@ -1,22 +1,10 @@
-package com.sda.generic_shop_fx.controller.viewControllers;
+package com.sda.generic_shop_fx.views;
 
-import com.sda.generic_shop_fx.dto.Customer;
 import com.sda.generic_shop_fx.dto.Model;
-import javafx.beans.InvalidationListener;
-import javafx.beans.Observable;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
-import javafx.concurrent.Task;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
-import javafx.event.EventType;
-import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.net.URL;
@@ -29,7 +17,6 @@ public class Shopping implements Initializable {
     public Button adminMenuButton;
     public Button purchasesButton;
     public BorderPane user_parent;
-
 
 
     @Override
@@ -46,11 +33,12 @@ public class Shopping implements Initializable {
                 default -> user_parent.setCenter(Model.getInstance().getViewFactory().getChooseCustomerView());
             }
         });
-        onChooseCustomer();
     }
+
 
     private void addListeners() {
         adminMenuButton.setOnAction(e -> onAdmin());
+        buyButton.setOnAction(e -> onBuy());
 
     }
 
@@ -58,8 +46,17 @@ public class Shopping implements Initializable {
         Stage stage = (Stage) adminMenuButton.getScene().getWindow();
         Model.getInstance().getViewFactory().getAdminWindow();
         Model.getInstance().getViewFactory().closeStage(stage);
+        Model.getInstance().getViewFactory().getUserSelectedMenuItem().set("");
+        Model.getInstance().getState().getCurrentCustomer().set(null);
     }
 
+    private void onBuy(){
+        if (Model.getInstance().getState().getCurrentCustomer().get() != null){
+            Model.getInstance().getViewFactory().getUserSelectedMenuItem().set("BuyMenu");
+        } else {
+            onChooseCustomer();
+        }
+    }
 
     private void onChooseCustomer() {
         Model.getInstance().getViewFactory().getUserSelectedMenuItem().set("ChooseCustomer");

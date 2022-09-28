@@ -1,4 +1,4 @@
-package com.sda.generic_shop_fx.controller.viewControllers;
+package com.sda.generic_shop_fx.views;
 
 import com.sda.generic_shop_fx.dto.Model;
 import com.sda.generic_shop_fx.views.ViewFactory;

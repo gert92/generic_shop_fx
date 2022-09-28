@@ -8,9 +8,5 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) {
         Model.getInstance().getViewFactory().getStartingWindow();
-//        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/Starter.fxml"));
-//        Scene scene = new Scene(fxmlLoader.load());
-//        stage.setScene(scene);
-//        stage.show();
     }
 }

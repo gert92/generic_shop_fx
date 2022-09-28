@@ -3,7 +3,6 @@ package com.sda.generic_shop_fx.renderers;
 import com.sda.generic_shop_fx.controller.CustomerController;
 
 import com.sda.generic_shop_fx.dto.Customer;
-import com.sda.generic_shop_fx.dto.Product;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableCell;
 import javafx.scene.paint.Paint;

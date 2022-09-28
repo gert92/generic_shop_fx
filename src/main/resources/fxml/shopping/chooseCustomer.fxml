@@ -6,13 +6,13 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sda.generic_shop_fx.controller.viewControllers.ChooseCustomer">
-   <children>
-      <Label layoutX="227.0" layoutY="165.0" text="Who are you?">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Label>
-      <ComboBox fx:id="customerComboBox" layoutX="225.0" layoutY="200.0" prefWidth="150.0" promptText="Customers..." />
-   </children>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.sda.generic_shop_fx.views.ChooseCustomer">
+   <Label layoutX="227.0" layoutY="165.0" text="Who are you?">
+      <font>
+         <Font size="24.0"/>
+      </font>
+   </Label>
+   <ComboBox fx:id="customerComboBox" layoutX="225.0" layoutY="200.0" prefWidth="150.0" promptText="Customers..."/>
 </AnchorPane>

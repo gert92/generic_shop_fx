@@ -19,7 +19,10 @@ public class Sale {
     private Long id;
     @ManyToOne
     private Customer customer;
-    @ManyToMany(fetch = FetchType.EAGER, mappedBy = "sales", cascade = CascadeType.REMOVE)
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.REMOVE)
+    @JoinTable(name = "sale_product",
+            joinColumns = @JoinColumn(name = "Sale_id"),
+            inverseJoinColumns = @JoinColumn(name = "product_id"))
     @ToString.Exclude
     private List<Product> product = new ArrayList<>();
 

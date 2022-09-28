@@ -21,11 +21,8 @@ public class Product {
     private Long quantity;
     private Double price;
 
-    @ManyToMany(fetch = FetchType.EAGER)
+    @ManyToMany(fetch = FetchType.EAGER, mappedBy = "product", cascade = CascadeType.REMOVE)
     @ToString.Exclude
-    @JoinTable(name = "Sale_product",
-            joinColumns = @JoinColumn(name = "product_id"),
-            inverseJoinColumns = @JoinColumn(name = "sale_id"))
     private List<Sale> sales = new ArrayList<>();
 
 }

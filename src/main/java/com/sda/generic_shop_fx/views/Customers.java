@@ -1,4 +1,4 @@
-package com.sda.generic_shop_fx.controller.viewControllers;
+package com.sda.generic_shop_fx.views;
 
 import com.sda.generic_shop_fx.controller.CustomerController;
 import com.sda.generic_shop_fx.dto.Customer;
@@ -16,7 +16,6 @@ import java.util.ResourceBundle;
 public class Customers implements Initializable {
     public TextField cNameField;
     public TextField cBalanceField;
-
     private final CustomerController customerController = new CustomerController();
     private final ObservableList<Customer> observableList = FXCollections.observableList(customerController.findAllCustomers());
     public TableView<Customer> customerTable;

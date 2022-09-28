@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<BorderPane fx:id="admin_parent" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sda.generic_shop_fx.controller.viewControllers.Admin">
+<BorderPane fx:id="admin_parent" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sda.generic_shop_fx.views.Admin">
    <left>
       <AnchorPane fx:id="sideMenu" minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="200.0" style="-fx-background-color: #05071e;" BorderPane.alignment="CENTER">
          <Button fx:id="customersButton" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutY="135.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #05071e; -fx-text-fill: white;" text="Customers" textAlignment="CENTER" AnchorPane.topAnchor="135.0">
@@ -43,7 +43,7 @@
                <FontIcon iconColor="WHITE" iconLiteral="fas-euro-sign" iconSize="18" />
             </graphic>
          </Button>
-         <Button fx:id="startScreenButton" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #05071e; -fx-text-fill: white;" text="Generic Shop" textAlignment="CENTER">
+         <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #05071e; -fx-text-fill: white;" text="Generic Shop" textAlignment="CENTER">
             <font>
                <Font size="14.0" />
             </font>

@@ -18,10 +18,13 @@ module com.sda.generic_shop_fx {
     opens com.sda.generic_shop_fx.dto;
     opens com.sda.generic_shop_fx.repository;
     opens com.sda.generic_shop_fx.controller;
-    opens com.sda.generic_shop_fx.controller.viewControllers;
+    opens com.sda.generic_shop_fx.views;
+
     exports com.sda.generic_shop_fx;
     exports com.sda.generic_shop_fx.dto;
     exports com.sda.generic_shop_fx.repository;
     exports com.sda.generic_shop_fx.controller;
-    exports com.sda.generic_shop_fx.controller.viewControllers;
+    exports com.sda.generic_shop_fx.views;
+
+
 }

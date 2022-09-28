@@ -1,4 +1,4 @@
-package com.sda.generic_shop_fx.controller.viewControllers;
+package com.sda.generic_shop_fx.views;
 
 import com.sda.generic_shop_fx.controller.ProductController;
 import com.sda.generic_shop_fx.dto.Product;
@@ -66,7 +66,6 @@ public class Products implements Initializable {
         pQuantityField.clear();
         observableList.add(product);
     }
-
 
     public void editProduct(ActionEvent actionEvent) {
         productTable.getItems().remove(editableProduct);
