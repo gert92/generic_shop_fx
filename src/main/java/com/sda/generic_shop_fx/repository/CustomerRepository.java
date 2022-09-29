@@ -31,7 +31,7 @@ public class CustomerRepository {
         return customer;
     }
 
-    public Customer findCustomerById(Long id){
+    public Customer searchCustomerById(Long id){
         Transaction transaction = null;
         Customer customer = null;
 

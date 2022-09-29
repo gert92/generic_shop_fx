@@ -29,7 +29,7 @@ public class Products implements Initializable {
     @FXML
     public AnchorPane product_parent;
     private final ProductController productController = new ProductController();
-    private final ObservableList<Product> observableList = FXCollections.observableList(productController.findAllAvailableProducts());
+    private final ObservableList<Product> observableList = FXCollections.observableList(productController.displayAllAvailableProducts());
     public Button productFormButton;
     public Button productFormCancelButton;
 

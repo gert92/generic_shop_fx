@@ -25,4 +25,10 @@ public class Product {
     @ToString.Exclude
     private List<Sale> sales = new ArrayList<>();
 
+    public Product(Long id, String productName, Long quantity, Double price) {
+        this.id = id;
+        this.productName = productName;
+        this.quantity = quantity;
+        this.price = price;
+    }
 }

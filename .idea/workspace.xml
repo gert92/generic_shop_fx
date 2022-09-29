@@ -5,36 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58f7f8c6-4994-423a-bcee-609a657886ea" name="Changes" comment="alot of stuff, v2.0">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Buy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/sda/generic_shop_fx/controller/CustomerControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/sda/generic_shop_fx/controller/ProductControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/sda/generic_shop_fx/controller/SaleControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/Buy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/ChooseCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/ChooseCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/Customers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Customers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Products.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/Sales.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Sales.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/Shopping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Shopping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/Starter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Starter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/SaleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/SaleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/dto/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/dto/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/dto/Sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/dto/Sale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/renderers/CustomerListCell.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/renderers/CustomerTableCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/renderers/CustomerTableCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/renderers/ProductListCell.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/renderers/ProductTableCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/renderers/ProductTableCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/renderers/SalesListCell.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/renderers/SalesTableCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/renderers/SalesTableCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/Starter.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Starter.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/admin/admin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/admin/admin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/admin/customer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/admin/customer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/admin/product.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/admin/product.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/admin/product/product.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/admin/product/product.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/admin/sales.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/admin/sales.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/shopping/buyMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/shopping/buyMenu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/shopping/chooseCustomer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/shopping/chooseCustomer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/shopping/shopping.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/shopping/shopping.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/repository/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Buy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Buy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Products.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +30,7 @@
         <option value="Enum" />
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -80,51 +64,120 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/SDA/generic_shop_fx/src/main/java/com/sda/generic_shop_fx&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "last_directory_selection": "C:/SDA/generic_shop_fx/src/main/java/com/sda/generic_shop_fx",
+    "last_opened_file_path": "/Users/denis.leping/IdeaProjects/generic_shop_fx/src/main/resources",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\SDA\generic_shop_fx\src\main\resources\fxml\admin\product" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.sda.generic_shop_fx.controller" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sda.generic_shop_fx.HelloApplication" />
+  <component name="RunManager" selected="JUnit.SaleControllerTest.findAllSales">
+    <configuration name="ProductControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generic_shop_fx" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.sda.generic_shop_fx.*" />
+          <option name="PATTERN" value="com.sda.generic_shop_fx.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.sda.generic_shop_fx.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.sda.generic_shop_fx.controller.ProductControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sda.generic_shop_fx.Main" />
+    <configuration name="ProductControllerTest.testAddProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generic_shop_fx" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.sda.generic_shop_fx.*" />
+          <option name="PATTERN" value="com.sda.generic_shop_fx.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.sda.generic_shop_fx.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.sda.generic_shop_fx.controller.ProductControllerTest" />
+      <option name="METHOD_NAME" value="testAddProduct" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductControllerTest.testDisplayAllAvailableProducts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generic_shop_fx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sda.generic_shop_fx.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sda.generic_shop_fx.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.sda.generic_shop_fx.controller.ProductControllerTest" />
+      <option name="METHOD_NAME" value="testDisplayAllAvailableProducts" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SaleControllerTest.findAllSales" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generic_shop_fx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sda.generic_shop_fx.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sda.generic_shop_fx.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.sda.generic_shop_fx.controller.SaleControllerTest" />
+      <option name="METHOD_NAME" value="findAllSales" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SaleControllerTest.findSalesByCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generic_shop_fx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sda.generic_shop_fx.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sda.generic_shop_fx.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.sda.generic_shop_fx.controller.SaleControllerTest" />
+      <option name="METHOD_NAME" value="findSalesByCustomer" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.HelloApplication" />
+        <item itemvalue="JUnit.SaleControllerTest.findAllSales" />
+        <item itemvalue="JUnit.SaleControllerTest.findSalesByCustomer" />
+        <item itemvalue="JUnit.ProductControllerTest" />
+        <item itemvalue="JUnit.ProductControllerTest.testAddProduct" />
+        <item itemvalue="JUnit.ProductControllerTest.testDisplayAllAvailableProducts" />
       </list>
     </recent_temporary>
   </component>

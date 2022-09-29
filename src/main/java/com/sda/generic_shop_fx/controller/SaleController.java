@@ -6,12 +6,16 @@ import com.sda.generic_shop_fx.dto.Sale;
 import com.sda.generic_shop_fx.repository.CustomerRepository;
 import com.sda.generic_shop_fx.repository.ProductRepository;
 import com.sda.generic_shop_fx.repository.SaleRepository;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@AllArgsConstructor
+@NoArgsConstructor
 public class SaleController {
     SaleRepository repository = new SaleRepository();
     CustomerRepository customerRepository = new CustomerRepository();
