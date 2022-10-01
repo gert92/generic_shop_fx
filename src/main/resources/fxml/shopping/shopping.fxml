@@ -9,60 +9,38 @@
 
 <BorderPane fx:id="user_parent" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sda.generic_shop_fx.views.Shopping">
    <left>
-      <AnchorPane fx:id="sideMenu" minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="200.0"
-                  style="-fx-background-color: #05071e;" BorderPane.alignment="CENTER">
-         <Button fx:id="buyButton" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutY="96.0"
-                 mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0"
-                 style="-fx-background-color: #05071e; -fx-text-fill: white;" text="Buy" textAlignment="CENTER"
-                 AnchorPane.topAnchor="96.0">
+      <AnchorPane fx:id="sideMenu" minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="200.0" style="-fx-background-color: #05071e;" BorderPane.alignment="CENTER">
+         <Button fx:id="buyButton" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutY="96.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #05071e; -fx-text-fill: white;" text="Buy" textAlignment="CENTER" AnchorPane.topAnchor="96.0">
             <font>
-               <Font size="14.0"/>
+               <Font size="14.0" />
             </font>
             <padding>
-               <Insets left="10.0"/>
+               <Insets left="10.0" />
             </padding>
             <graphic>
-               <FontIcon iconColor="WHITE" iconLiteral="fas-money-check-alt" iconSize="18"/>
+               <FontIcon iconColor="WHITE" iconLiteral="fas-money-check-alt" iconSize="18" />
             </graphic>
          </Button>
-         <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0"
-                 style="-fx-background-color: #05071e; -fx-text-fill: white;" text="Generic Shop"
-                 textAlignment="CENTER">
+         <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #05071e; -fx-text-fill: white;" text="Generic Shop" textAlignment="CENTER">
             <font>
-               <Font size="14.0"/>
+               <Font size="14.0" />
             </font>
             <graphic>
-               <FontIcon iconColor="WHITE" iconLiteral="fab-shopify" iconSize="24"/>
+               <FontIcon iconColor="WHITE" iconLiteral="fab-shopify" iconSize="24" />
             </graphic>
             <padding>
-               <Insets left="10.0"/>
+               <Insets left="10.0" />
             </padding>
          </Button>
-         <Button fx:id="adminMenuButton" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutY="538.0"
-                 mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0"
-                 style="-fx-background-color: #05071e; -fx-text-fill: white;" text="Admin" textAlignment="CENTER">
+         <Button fx:id="adminMenuButton" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutY="538.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #05071e; -fx-text-fill: white;" text="Admin" textAlignment="CENTER">
             <font>
-               <Font size="14.0"/>
+               <Font size="14.0" />
             </font>
             <padding>
-               <Insets left="10.0"/>
+               <Insets left="10.0" />
             </padding>
             <graphic>
-               <FontIcon fill="WHITE" iconColor="WHITE" iconLiteral="fas-store" iconSize="18"/>
-            </graphic>
-         </Button>
-         <Button fx:id="purchasesButton" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutY="156.0"
-                 mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0"
-                 style="-fx-background-color: #05071e; -fx-text-fill: white;" text="View Purchases"
-                 textAlignment="CENTER">
-            <font>
-               <Font size="14.0"/>
-            </font>
-            <padding>
-               <Insets left="10.0"/>
-            </padding>
-            <graphic>
-               <FontIcon iconColor="WHITE" iconLiteral="fas-history" iconSize="18"/>
+               <FontIcon fill="WHITE" iconColor="WHITE" iconLiteral="fas-store" iconSize="18" />
             </graphic>
          </Button>
       </AnchorPane>

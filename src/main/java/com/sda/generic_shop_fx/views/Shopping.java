@@ -15,7 +15,6 @@ public class Shopping implements Initializable {
     public AnchorPane sideMenu;
     public Button buyButton;
     public Button adminMenuButton;
-    public Button purchasesButton;
     public BorderPane user_parent;
 
 

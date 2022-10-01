@@ -4,36 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58f7f8c6-4994-423a-bcee-609a657886ea" name="Changes" comment="alot of stuff, v2.0">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Buy.java" afterDir="false" />
+    <list default="true" id="58f7f8c6-4994-423a-bcee-609a657886ea" name="Changes" comment="refactor and some fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/Buy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/ChooseCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/ChooseCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/Customers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Customers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Products.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/Sales.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Sales.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/Shopping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Shopping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/controller/viewControllers/Starter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Starter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/dto/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/dto/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/dto/Sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/dto/Sale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/renderers/CustomerListCell.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/renderers/CustomerTableCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/renderers/CustomerTableCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/renderers/ProductListCell.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/renderers/ProductTableCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/renderers/ProductTableCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/renderers/SalesListCell.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/renderers/SalesTableCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/renderers/SalesTableCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/Starter.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Starter.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/admin/admin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/admin/admin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Customers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Customers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Products.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Sales.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Sales.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Shopping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Shopping.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/admin/customer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/admin/customer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/admin/product.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/admin/product.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/admin/product/product.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/admin/product/product.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/admin/sales.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/admin/sales.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/shopping/buyMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/shopping/buyMenu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/shopping/chooseCustomer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/shopping/chooseCustomer.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/shopping/shopping.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/shopping/shopping.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -143,7 +122,13 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1664313386575</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="refactor and some fixes">
+      <created>1664397023359</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1664397023359</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -159,7 +144,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="alot of stuff, v2.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="alot of stuff, v2.0" />
+    <MESSAGE value="refactor and some fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor and some fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

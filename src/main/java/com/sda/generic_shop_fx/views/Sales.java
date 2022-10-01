@@ -27,6 +27,7 @@ public class Sales implements Initializable {
     public TableColumn<Sale, String> deleteCol;
     public TableColumn<Sale, String> customerCol;
     public TableColumn<Sale, String> itemsCol;
+    public Button salesReloadButton;
 
 
     @Override
@@ -40,6 +41,12 @@ public class Sales implements Initializable {
         customerSelector.setButtonCell(new CustomerChoiceListCell());
         customerSelector.setItems(customersList);
         customerSelector.setOnAction(actionEvent -> filterByCustomer());
+
+        salesReloadButton.setOnAction(e -> {
+            observableList.clear();
+            observableList.addAll(saleController.findAllSales());
+            salesTable.refresh();
+        });
     }
 
     private void filterByCustomer(){

@@ -32,6 +32,7 @@ public class Products implements Initializable {
     private final ObservableList<Product> observableList = FXCollections.observableList(productController.findAllAvailableProducts());
     public Button productFormButton;
     public Button productFormCancelButton;
+    public Button productsReloadButton;
 
     private Product editableProduct = null;
 
@@ -55,6 +56,12 @@ public class Products implements Initializable {
                 productFormCancelButton.setVisible(true);
                 productFormButton.setOnAction(this::editProduct);
             }
+        });
+
+        productsReloadButton.setOnAction(e -> {
+            observableList.clear();
+            observableList.addAll(productController.findAllAvailableProducts());
+            productTable.refresh();
         });
 
     }

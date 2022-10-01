@@ -24,6 +24,7 @@ public class Customers implements Initializable {
     public TableColumn<Customer, String> deleteCol;
     public Button customerFormButton;
     public Button customerFormCancelButton;
+    public Button customersReloadButton;
 
     private Customer editableCustomer = null;
 
@@ -43,6 +44,12 @@ public class Customers implements Initializable {
                 customerFormCancelButton.setVisible(true);
                 customerFormButton.setOnAction(this::editCustomer);
             }
+        });
+
+        customersReloadButton.setOnAction(e -> {
+            observableList.clear();
+            observableList.addAll(customerController.findAllCustomers());
+            customerTable.refresh();
         });
     }
 
