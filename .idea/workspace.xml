@@ -6,14 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="58f7f8c6-4994-423a-bcee-609a657886ea" name="Changes" comment="refactor and some fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Customers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Customers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Products.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Sales.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Sales.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Shopping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sda/generic_shop_fx/views/Shopping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/admin/customer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/admin/customer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/admin/product/product.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/admin/product/product.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/admin/sales.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/admin/sales.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/shopping/shopping.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/shopping/shopping.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sda/generic_shop_fx/controller/SaleControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sda/generic_shop_fx/controller/SaleControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +67,7 @@
       <recent name="C:\SDA\generic_shop_fx\src\main\resources\fxml\admin\product" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.SaleControllerTest">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sda.generic_shop_fx.HelloApplication" />
       <module name="generic_shop_fx" />
@@ -100,8 +94,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SaleControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generic_shop_fx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sda.generic_shop_fx.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sda.generic_shop_fx.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.sda.generic_shop_fx.controller.SaleControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SaleControllerTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.HelloApplication" />
       </list>
@@ -154,6 +164,11 @@
           <properties class="org.hibernate.NotYetImplementedFor6Exception" package="org.hibernate" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/sda/generic_shop_fx/controller/SaleControllerTest.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

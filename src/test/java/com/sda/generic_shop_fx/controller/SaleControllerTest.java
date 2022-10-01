@@ -48,30 +48,32 @@ class SaleControllerTest {
     @Test
     @Order(1)
     void testAddSale() {
-//        Customer customer1 = new Customer(51L, "Name", 3000F);
-//        Product product1 = new Product(67L, "Bag of dead flies", 100L, 9.99);
-//        List<Product> list1 = new ArrayList<>((Collection) product1);
-//        Sale sale1 = new Sale(30L, customer1, list1);
-//        saleRepository.createSale(sale1);
-//
-//        ArgumentCaptor<Product> productArgumentCaptor = ArgumentCaptor.forClass(Product.class);
-//
-//        verify(saleRepository).createSale(productArgumentCaptor.capture());
-//
-//        Product capturedProduct = productArgumentCaptor.getValue();
-//
-//        assertThat(capturedProduct).isEqualTo(product1);
+        Customer customer1 = new Customer(51L, "Name", 3000F);
+        Product product1 = new Product(67L, "Bag of dead flies", 100L, 9.99);
+        List<Product> list1 = new ArrayList<>();
+        list1.add(product1);
+        Sale sale1 = new Sale(30L, customer1, list1);
+        saleRepository.createSale(sale1);
+
+        ArgumentCaptor<Sale> saleArgumentCaptor = ArgumentCaptor.forClass(Sale.class);
+
+        verify(saleRepository).createSale(saleArgumentCaptor.capture());
+
+        Sale capturedSale = saleArgumentCaptor.getValue();
+
+        assertThat(capturedSale).isEqualTo(sale1);
     }
 
     @Test
     @Order(2)
     void testFindSalesByCustomer() {
-//        Customer customer1 = new Customer(51L, "Name", 3000F);
-//        Product product1 = new Product(67L, "Bag of dead flies", 100L, 9.99);
-//        List<Product> list1 = new ArrayList<>((Collection) product1);
-//        Sale sale1 = new Sale(30L, customer1, list1);
-//        underTest.findSalesByCustomer(customer1);
-//        verify(saleRepository).findSalesByCustomerId(customer1);
+        Customer customer1 = new Customer(51L, "Name", 3000F);
+        Product product1 = new Product(67L, "Bag of dead flies", 100L, 9.99);
+        List<Product> list1 = new ArrayList<>();
+        list1.add(product1);
+        Sale sale1 = new Sale(30L, customer1, list1);
+        underTest.findSalesByCustomer(customer1);
+        verify(saleRepository).findSalesByCustomerId(customer1);
     }
 
     @Test
@@ -84,25 +86,19 @@ class SaleControllerTest {
     @Test
     @Order(4)
     void testDeleteSale() {
-//        Customer customer1 = new Customer(51L, "Name", 3000F);
-//        Product product1 = new Product(67L, "Bag of dead flies", 100L, 9.99);
-//        List<Product> list1 = new ArrayList<>((Collection) product1);
-//        Sale sale1 = new Sale(30L, customer1, list1);
-//        saleRepository.deleteSale(sale1);
-//
-//        ArgumentCaptor<Product> productArgumentCaptor = ArgumentCaptor.forClass(Product.class);
-//
-//        verify(saleRepository).deleteSale(productArgumentCaptor.capture());
-//
-//        Product capturedProduct = productArgumentCaptor.getValue();
-//
-//        assertThat(capturedProduct).isEqualTo(product1);
-    }
+        Customer customer1 = new Customer(51L, "Name", 3000F);
+        Product product1 = new Product(67L, "Bag of dead flies", 100L, 9.99);
+        List<Product> list1 = new ArrayList<>();
+        list1.add(product1);
+        Sale sale1 = new Sale(30L, customer1, list1);
+        saleRepository.deleteSale(sale1);
 
-    @Test
-    @Order(5)
-    void displayProductsByQuantity() {
-//        underTest.displayProductsByQuantity();
-//        verify(saleRepository).findAllSales();
+        ArgumentCaptor<Sale> saleArgumentCaptor = ArgumentCaptor.forClass(Sale.class);
+
+        verify(saleRepository).deleteSale(saleArgumentCaptor.capture());
+
+        Sale capturedSale = saleArgumentCaptor.getValue();
+
+        assertThat(capturedSale).isEqualTo(sale1);
     }
 }

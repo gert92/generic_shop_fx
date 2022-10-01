@@ -60,7 +60,7 @@ public class Products implements Initializable {
 
         productsReloadButton.setOnAction(e -> {
             observableList.clear();
-            observableList.addAll(productController.findAllAvailableProducts());
+            observableList.addAll(productController.displayAllAvailableProducts());
             productTable.refresh();
         });
 
