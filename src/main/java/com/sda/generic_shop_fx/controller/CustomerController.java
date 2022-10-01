@@ -2,9 +2,13 @@ package com.sda.generic_shop_fx.controller;
 
 import com.sda.generic_shop_fx.dto.Customer;
 import com.sda.generic_shop_fx.repository.CustomerRepository;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
+@AllArgsConstructor
+@NoArgsConstructor
 public class CustomerController {
 
     CustomerRepository repository = new CustomerRepository();
@@ -28,7 +32,7 @@ public class CustomerController {
     }
 
     public Customer findCustomerById(Long id){
-        return repository.findCustomerById(id);
+        return repository.searchCustomerById(id);
     }
 
     public List<Customer> getAllCustomers(){

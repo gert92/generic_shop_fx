@@ -42,7 +42,7 @@ public class Buy implements Initializable {
     private Customer currentCustomer;
     private final ProductController productController = new ProductController();
     private final SaleController saleController = new SaleController();
-    private final ObservableList<Product> products = FXCollections.observableList(productController.findAllAvailableProducts());
+    private final ObservableList<Product> products = FXCollections.observableList(productController.displayAllAvailableProducts());
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

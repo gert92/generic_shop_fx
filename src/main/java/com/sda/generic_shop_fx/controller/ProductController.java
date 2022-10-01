@@ -3,9 +3,13 @@ package com.sda.generic_shop_fx.controller;
 
 import com.sda.generic_shop_fx.dto.Product;
 import com.sda.generic_shop_fx.repository.ProductRepository;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
+@AllArgsConstructor
+@NoArgsConstructor
 public class ProductController {
 
     ProductRepository repository = new ProductRepository();
@@ -31,7 +35,7 @@ public class ProductController {
         products.forEach(System.out::println);
     }
 
-    public List<Product> findAllAvailableProducts(){
+    public List<Product> displayAllAvailableProducts(){
         return repository.findAllAvailableProducts();
     }
 
